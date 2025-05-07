@@ -3,24 +3,24 @@
 ## Introduction
 This project presents an optimization model that select and schedule events for a 3-day road trip to the Lassen National Park based on time, money, energy, preference, and location. It incorporates a simple uncertainty scenario and allows user to override part of the schedule and resolve the plan. 
 ## Itinerary
-| Time                    | Event                        |     |
-| ----------------------- | ---------------------------- | --- |
-| Day 1 08:00–Day 1 13:00 | drive_out                    |     |
-| Day 1 13:00–Day 1 16:00 | upper_bidwell_park           |     |
-| Day 1 16:00–Day 1 18:00 | rest                         |     |
-| Day 1 18:00–Day 1 21:00 | north_table_mountain_reserve |     |
-| Day 1 21:00–Day 2 00:00 | rest                         |     |
-| Day 2 00:00–Day 2 08:00 | lodging3_ontheway            |     |
-| Day 2 08:00–Day 2 10:00 | boating_lassen               |     |
-| Day 2 10:00–Day 2 21:00 | rest                         |     |
-| Day 2 21:00–Day 2 23:00 | stargazing_lassen            |     |
-| Day 2 23:00–Day 3 00:00 | rest                         |     |
-| Day 3 00:00–Day 3 08:00 | lodging1_campcabin           |     |
-| Day 3 08:00–Day 3 10:00 | sulfurworks_lassen           |     |
-| Day 3 10:00–Day 3 13:00 | rest                         |     |
-| Day 3 13:00–Day 3 18:00 | peaktrail_lassen             |     |
-| Day 3 18:00–Day 3 19:00 | rest                         |     |
-| Day 3 19:00–Day 4 00:00 | drive_back                   |     |
+| Time                    | Event                        |    
+| ----------------------- | ---------------------------- | 
+| Day 1 08:00–Day 1 13:00 | drive_out                    | 
+| Day 1 13:00–Day 1 16:00 | upper_bidwell_park           | 
+| Day 1 16:00–Day 1 18:00 | rest                         |     
+| Day 1 18:00–Day 1 21:00 | north_table_mountain_reserve |    
+| Day 1 21:00–Day 2 00:00 | rest                         |     
+| Day 2 00:00–Day 2 08:00 | lodging3_ontheway            |     
+| Day 2 08:00–Day 2 10:00 | boating_lassen               |     
+| Day 2 10:00–Day 2 21:00 | rest                         |     
+| Day 2 21:00–Day 2 23:00 | stargazing_lassen            |     
+| Day 2 23:00–Day 3 00:00 | rest                         |     
+| Day 3 00:00–Day 3 08:00 | lodging1_campcabin           |     
+| Day 3 08:00–Day 3 10:00 | sulfurworks_lassen           |     
+| Day 3 10:00–Day 3 13:00 | rest                         |     
+| Day 3 13:00–Day 3 18:00 | peaktrail_lassen             |     
+| Day 3 18:00–Day 3 19:00 | rest                         |     
+| Day 3 19:00–Day 4 00:00 | drive_back                   |     
 
 ![Road Trip Schedule](./Pasted%20image%2020250507012329.png)
 ## Rationale
@@ -63,7 +63,7 @@ $$
 where $E_h$ denotes energy level at each hour and
 
 $$
-\Delta_h \;=\; \sum_{a\in A} \bigl(\text{energy\_cost}[a]\bigr)\,\cdot\text{start}[{a,\,h-\mathrm{duration}[a]+1}]
+\Delta_h = \sum_{a\in A} \bigl(\text{energy\_cost}[a]\bigr)\,\cdot\text{start}[{a,\,h-\mathrm{duration}[a]+1}]
 $$
 where $start[a,t]$ denotes whether event $a$ is scheduled and started at hour $t$. This means $\Delta_h$ only updates energy level at the completion of each event.
 To prevent exhaustion and unrealistic charging, 
