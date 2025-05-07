@@ -66,6 +66,7 @@ $$
 \Delta_h \;=\; \sum_{a \in A} \bigl(\text{energy\_cost}[a]\bigr)\,\cdot\text{start}\bigl(a,\,h - \mathrm{duration}[a] + 1\bigr)
 $$
 
+
 where $start[a,t]$ denotes whether event $a$ is scheduled and started at hour $t$. This means $\Delta_h$ only updates energy level at the completion of each event.
 To prevent exhaustion and unrealistic charging, 
 $$0\leq E_h \leq E_{max}$$
