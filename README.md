@@ -55,7 +55,7 @@ Here are some auxiliary variables to build this constraint: V1, V2, V3: Lineariz
 $$
 E_h =
 \begin{cases}
-E_{\mathrm{initial}} - \Delta_0, & h = 0,\\[6pt]
+E_{\mathrm{initial}} - \Delta_0, & h = 0,\\
 E_{h-1} - \Delta_h,              & h > 0,
 \end{cases}
 $$
