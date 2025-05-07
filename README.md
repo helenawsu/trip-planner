@@ -21,7 +21,7 @@ This project presents an optimization model that select and schedule events for 
 | Day 3 13:00–Day 3 18:00 | peaktrail_lassen             |     |
 | Day 3 18:00–Day 3 19:00 | rest                         |     |
 | Day 3 19:00–Day 4 00:00 | drive_back                   |     |
-![[Pasted image 20250507012329.png]]
+![Road Trip Schedule](./Pasted%20image%2020250507012329.png)
 ## Rationale
 Trip planning is a scheduling problem that maximizes happiness while making sure the condition is reasonably survivable, for example a human must sleep, eat and cannot teleport. 
 The main decision variable is a set of binary variables that denote whether event $i$ happened at hour $j$. Time, money and energy are modeled as constraint since they are requirements to meet. Preference and location are modeled in the objective function to maximize utility and convenience.
