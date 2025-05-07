@@ -1,5 +1,4 @@
 # trip-planner
-## ieor164 final project
 ## Introduction
 This project presents an optimization model that select and schedule events for a 3-day road trip to the Lassen National Park based on time, money, energy, preference, and location. It incorporates a simple uncertainty scenario and allows user to override part of the schedule and resolve the plan. 
 ## Itinerary
