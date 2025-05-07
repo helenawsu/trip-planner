@@ -63,7 +63,7 @@ $$
 where $E_h$ denotes energy level at each hour and
 
 $$
-\Delta_h = \sum_{a\in A} (\text{energy\_cost}[a])\,\cdot \text{start}[{a,\,h-\text{duration}[a]+1}]
+\Delta_h = \sum_{a\in A} (\text{energyCost}[a])\,\cdot \text{start}[{a,\,h-\text{duration}[a]+1}]
 $$
 
 
